@@ -1,0 +1,171 @@
+body{
+font-family: 'M PLUS Rounded 1c';
+color: black;
+}
+
+/******************* SEARCH *********************/
+.weather-input{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .weather-input{
+        margin-top: 10px;
+    }
+}
+.weather-input-elem{
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+/******************* SEARCH *********************/
+/******************* SEARCH BTN *****************/
+.weather-button-wrap{
+    margin-left: 10px;
+}
+.weather-button{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    box-shadow: #000000 4px 4px 0 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.weather-button:hover{
+    background-color: gray;
+    color: white;
+
+}
+.weather-button:active{
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+
+}
+.weather-button-wrap{
+    margin-left: 10px;
+}
+/******************* SEARCH BTN *****************/
+
+/******************* Weather Card *****************/
+.body{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 15px;
+}
+.weather-img{
+    width: 50px;
+}
+.weather-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.today-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+        
+}
+@media (max-width: 600px) {
+    .today-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+.temperature-tree-days-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+@media (max-width: 600px) {
+    .temperature-tree-days-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+}
+.weather-feels-name{
+    font-weight: 300;
+}
+.feels-like-today{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: flex-end;
+}
+.temperature-today{
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.city{
+    font-size: 3em;
+    font-weight: 600;
+}
+.day{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.country{
+    font-size: 2em;
+}
+.temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.city-temperature-tree-days{
+    margin: 10px;
+    max-width: 253px;
+    border-radius: 10px;
+}
+.temperature-today{
+    margin: 10px;
+}
+.city-name{
+    margin: 10px;
+}
+/******************* Weather Card *****************/
