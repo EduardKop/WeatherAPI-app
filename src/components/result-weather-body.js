@@ -111,7 +111,7 @@ function WeatherBody() {
         (async () => {
             try {
             setLoading("true");
-            let weatherAPI = `http://api.weatherapi.com/v1/forecast.json?key=f503e85c25234eadbec193044221601&q=${city}&days=3&aqi=no&alerts=no`
+            let weatherAPI = `https://api.weatherapi.com/v1/forecast.json?key=f503e85c25234eadbec193044221601&q=${city}&days=3&aqi=no&alerts=no`
             const res = await fetch(encodeURI(weatherAPI));
               if (res.status >= 400) {
               throw new Error("Bad response from server");
