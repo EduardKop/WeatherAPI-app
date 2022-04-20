@@ -98,15 +98,28 @@ function WeatherBody() {
           <img className="weather-img" src="https://img.icons8.com/doodle/96/000000/rainwater-catchment.png"/>           
           </>
           )
-          }else  {
+          }else if (icon=='Moderate rain') {
             return (
               <>
-            <div className="weather-feels-name"></div>
-            <img className="weather-img" src="https://img.icons8.com/doodle/96/000000/thermometer--v3.png"/>            </>
+            <div className="weather-feels-name">Moderate rain</div>
+            <img className="weather-img" src="https://img.icons8.com/doodle/96/000000/rainwater-catchment.png"/>           
+            </>
+            )
+            }else if (icon=='Heavy rain') {
+              return (
+                <>
+              <div className="weather-feels-name">Moderate rain</div>
+              <img className="weather-img" src="https://img.icons8.com/doodle/96/000000/rain--v1.png"/>         
+              </>
+              )
+              }else  {
+            return (
+              <>
+            <div className="weather-feels-name">Other</div>
+            <img className="weather-img" src="https://img.icons8.com/doodle/96/000000/winter.png"/>            </>
             )
         }
   }
-
   const hendler = () =>{  
         (async () => {
             try {
@@ -121,6 +134,7 @@ function WeatherBody() {
             setTemperature(data.forecast.forecastday)
             setCurrent(data.current)
             settodayFeels(data.forecast.forecastday[0].day.condition.text)
+            console.log(data.forecast.forecastday)
             } catch (err) {
               setLoading("null");
             }

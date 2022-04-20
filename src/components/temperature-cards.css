@@ -11,6 +11,7 @@ color: black;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    
 }
 @media (max-width: 600px) {
     .weather-input{
@@ -19,6 +20,8 @@ color: black;
 }
 .weather-input-elem{
     border: none;
+    outline: none;
+    border: 1px solid #D6D6D6;
     border-radius: 5px;
     width: 250px;
     height: 35px;
@@ -63,7 +66,7 @@ color: black;
 .body{
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.12);
 border-radius: 16px;
@@ -72,7 +75,11 @@ backdrop-filter: blur(8px);
 -webkit-backdrop-filter: blur(8px);
 box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-
+@media (max-width: 600px) {
+    .body{
+        margin: 10px;
+    }
+}
 .icon{
     display: flex;
     flex-direction: column-reverse;
@@ -112,11 +119,8 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 @media (max-width: 600px) {
     .temperature-tree-days-wrapper{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        align-content: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 }
 .weather-feels-name{
@@ -159,7 +163,7 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
 .city-temperature-tree-days{
     margin: 10px;
-    max-width: 253px;
+    max-width: 337px;
     border-radius: 10px;
 }
 .temperature-today{
