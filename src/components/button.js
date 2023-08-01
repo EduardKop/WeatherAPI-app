@@ -6,7 +6,7 @@ function Button ({triger}) {
         <button 
         className="weather-button"
         onClick={triger}
-        >Search</button>
+        >Пошук</button>
         </div>
     )
 }
