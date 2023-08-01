@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/WeatherAPI-app/static/css/main.21ea6b76.css",
-    "main.js": "/WeatherAPI-app/static/js/main.0f4b130b.js",
+    "main.css": "/WeatherAPI-app/static/css/main.8439ff8f.css",
+    "main.js": "/WeatherAPI-app/static/js/main.d423b4f5.js",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/WeatherAPI-app/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "index.html": "/WeatherAPI-app/index.html",
-    "main.21ea6b76.css.map": "/WeatherAPI-app/static/css/main.21ea6b76.css.map",
-    "main.0f4b130b.js.map": "/WeatherAPI-app/static/js/main.0f4b130b.js.map"
+    "main.8439ff8f.css.map": "/WeatherAPI-app/static/css/main.8439ff8f.css.map",
+    "main.d423b4f5.js.map": "/WeatherAPI-app/static/js/main.d423b4f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.21ea6b76.css",
-    "static/js/main.0f4b130b.js"
+    "static/css/main.8439ff8f.css",
+    "static/js/main.d423b4f5.js"
   ]
 }
